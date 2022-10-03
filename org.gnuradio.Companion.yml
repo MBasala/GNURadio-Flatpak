@@ -1,0 +1,85 @@
+############################################
+# GnuRadio Companion
+############################################
+
+app-id: org.gnuradio.Companion
+runtime: org.kde.Platform
+runtime-version: '5.15-21.08'
+sdk: org.kde.Sdk
+rename-desktop-file: gnuradio-grc.desktop
+rename-icon: gnuradio-grc
+command: gnuradio-companion
+finish-args:
+  - --device=all
+  - --device=dri
+  - --share=network
+  - --share=ipc
+  - --filesystem=home
+  - --persist=.cache/grc_gnuradio
+  - --persist=.gnuradio
+  - --share=ipc
+  - --share=network
+  - --socket=pulseaudio
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=x11
+cleanup:
+  - "/lib/cmake/"
+  - "/man"
+  - "/share/man"
+  - "/share/gtk-doc"
+  - "/share/doc"
+  - "/share/vala"
+  - "*.la"
+  - "*.a"
+  - "/bin/pygtk*"
+  - "/bin/pygobject*"
+  - "/lib/pygtk"
+  - "/bin/python*-config"
+  - "/bin/pip*"
+  - "/bin/smtpd.py"
+modules:
+  - deps/zeromq.json
+  - deps/libusb.yml
+  - deps/libevent.json 
+  - deps/boost.yml
+  - deps/volk.yml
+  - deps/uhd.yml
+  - deps/fftw.yml
+  - deps/spdlog.yml
+  - deps/sdl.yml
+  - deps/portaudio.yml
+  - deps/lapack.json
+  - deps/qwt.json
+  - deps/gsl.json
+  - deps/cppzmq.json
+  - deps/swig.json
+  - deps/libaio.json
+  - deps/libxm12.json
+  - python/python3-packaging.json
+  - python/python3-pysdl2.json
+  - python/python3-flit_core.json
+  - python/python3-tomli.json
+  - python/python3-pygccxml.json
+  - python/python3-pybind11.json
+  - python/python3-pyyaml.json
+  - python/python3-pycairo.json
+  - python/python3-PyGObject.json
+  - python/python3-pygi.json
+  - python/python3-pyqt5.yml
+  - python/python3-pythran.json
+  - python/python3-numpy.json
+  - python/python3-pyqtgraph.json
+  - python/python3-scipy.json
+  - python/python3-matplotlib.json
+  - deps/avahi.json
+  - deps/bladerf.json 
+  - deps/airspyone_host.json
+  - deps/airspyhf.json
+  - deps/librtlsdr.json
+  - deps/libiio.yml
+  - deps/libad9361-iio.yml
+  - deps/soapySDR.json
+  - deps/libhackrf.yml
+  - gnuradio.yml
+  - extensions/gr-osmosdr.yml

@@ -1,0 +1,22 @@
+---
+name: gr-osmosdr
+buildsystem: cmake
+config-opts:
+- "-Dpybind11_DIR=/app/lib/python3.9/site-packages/pybind11/share/cmake/pybind11/" #`echo $PWD`"
+- "-DCMAKE_BUILD_TYPE=Release"
+- "-DENABLE_PYTHON=ON"
+- "-DENABLE_UHD=ON"
+- "-DENABLE_REDPITAYA=ON"
+- "-DENABLE_AIRSPY=ON"
+- "-DENABLE_AIRSPYHF=ON"
+- "-DENABLE_RTL=ON"
+- "-DENABLE_UHD=ON"
+- "-DENABLE_BLADERF=ON"
+- "-DENABLE_HACKRF=ON"
+- "-DENABLE_FILE=ON"
+- "-DENABLE_SOAPY=ON"
+sources:
+- type: git
+  url: https://github.com/osmocom/gr-osmosdr.git
+  branch: master
+  commit: 821fdb3822b3ad258bdd4be79e5cd3d5964289fb

@@ -1,0 +1,44 @@
+{
+  "name": "avahi",
+    "config-opts": [
+      "--enable-shared",
+      "--with-systemdsystemunitdir=/app/lib/systemd",
+      "--with-distro=none",
+      "--enable-dbus",
+      "--enable-compat-libdns_sd",
+      "--disable-python",
+      "--disable-libdaemon",
+      "--enable-dbus",
+      "--enable-compat-libdns_sd",
+      "--disable-gtk",
+      "--disable-gtk3",
+      "--disable-qt3",
+      "--disable-qt4",
+      "--disable-doxygen-doc",
+      "--disable-doxygen-dot",
+      "--disable-doxygen-man",
+      "--disable-doxygen-rtf",
+      "--disable-doxygen-xml",
+      "--disable-doxygen-chm",
+      "--disable-doxygen-chi",
+      "--disable-doxygen-html",
+      "--disable-doxygen-ps",
+      "--disable-doxygen-pdf",
+      "--disable-mono",
+      "--disable-gobject",
+      "--disable-introspection",
+      "--disable-monodoc",
+      "--disable-manpages",
+      "--disable-xmltoman",
+      "--disable-utils"
+    ],
+ 
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/lathiat/avahi.git",
+      "tag": "v0.8",
+      "commit": "f060abee2807c943821d88839c013ce15db17b58"
+    }
+  ]
+ }

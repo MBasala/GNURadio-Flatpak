@@ -1,0 +1,14 @@
+{
+    "name": "python3-pybind11",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pybind11==2.9.2\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fd/24/efc9e62aa1baa48622028c59ae2c70fa134801e8acbdf30e5b594fe5a360/pybind11-2.9.2-py2.py3-none-any.whl",
+            "sha256": "20f56674da31c96bca7569b91e60f2bd30d693f0728541412ec927574f7bc9df"
+        }
+    ]
+}

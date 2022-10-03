@@ -1,0 +1,18 @@
+---
+name: uhd
+buildsystem: cmake
+config-opts:
+- "-DCMAKE_BUILD_TYPE=Release"
+- "-DENABLE_E100=ON"
+- "-DENABLE_E300=ON"
+- "-DENABLE_EXAMPLES=OFF"
+- "-DENABLE_TESTS=OFF"
+- "-DENABLE_UTILS=OFF"
+make-args:
+- "-j4"
+sources:
+- type: git
+  url: https://github.com/EttusResearch/uhd.git
+  tag: v4.3.0.0
+  commit: 1f8fd3457dee48dc472446113a6998c2529adf59
+subdir: host

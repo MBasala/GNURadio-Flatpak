@@ -1,0 +1,11 @@
+---
+name: libiio
+buildsystem: cmake
+config-opts: 
+  - -DINSTALL_UDEV_RULE=OFF
+builddir: true
+sources:
+- type: git
+  url: https://github.com/analogdevicesinc/libiio.git
+  tag: v0.24
+  commit: c4498c27761d04d4ac631ec59c1613bfed079da5

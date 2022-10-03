@@ -1,0 +1,10 @@
+---
+name: SDL
+make-args:
+- "-j8"
+sources:
+- type: git
+  url: https://github.com/libsdl-org/SDL
+  tag: release-2.24.0
+  commit: 8c9beb0c873f6ca5efbd88f1ad2648bfc793b2ac
+builddir: true

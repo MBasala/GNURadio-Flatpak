@@ -1,0 +1,10 @@
+{
+  "name": "libdaemon",
+  "buildsystem": "autotools",
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/kisom/libdaemon.git",
+      "branch": "master"
+    }]
+}

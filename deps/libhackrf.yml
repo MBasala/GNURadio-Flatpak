@@ -1,0 +1,12 @@
+---
+name: libhackrf
+buildsystem: cmake
+config-opts:
+- "-DCMAKE_BUILD_TYPE=Release"
+make-args:
+- "-j4"
+sources:
+- type: git
+  url: https://github.com/mossmann/hackrf.git
+  commit: e3e406491d11396b4dbad42f6d27c50da47908b6
+subdir: host/libhackrf

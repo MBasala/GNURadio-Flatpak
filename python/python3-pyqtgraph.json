@@ -1,0 +1,14 @@
+{
+    "name": "python3-pyqtgraph",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pyqtgraph\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/76/b8/06b2ce771794639f5fa82bff9e5859d9dc5ca3e5e1639c0af52728c9f6f1/pyqtgraph-0.12.4.tar.gz",
+            "sha256": "c2c8f2b7e1d7f97a710f370acff6368d686c9d6cdc560f2d83dcf59185dfa19d"
+        }
+    ]
+}

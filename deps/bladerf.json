@@ -1,0 +1,12 @@
+{
+  "name": "bladerf",
+  "buildsystem": "cmake",
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/Nuand/bladeRF.git",
+      "branch": "master",
+      "commit": "0ffb795c450fe814060f95cd37455847c9c536d2"
+    }
+  ]
+ }

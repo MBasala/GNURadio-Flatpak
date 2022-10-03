@@ -1,0 +1,16 @@
+---
+name: portaudio
+config-opts:
+- "--enable-cxx"
+make-args:
+- -j1
+sources:
+- type: git
+  url: https://github.com/PortAudio/portaudio.git
+  tag: v19.7.0
+  commit: 147dd722548358763a8b649b3e4b41dfffbcfbb6
+cleanup:
+- /lib/pkgconfig
+- /include
+- '*.la'
+

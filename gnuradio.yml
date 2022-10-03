@@ -1,0 +1,41 @@
+---
+name: gnuradio
+buildsystem: cmake
+config-opts:
+- "-DQWT_INCLUDE_DIRS=/app/include/"
+- "-DCMAKE_BUILD_TYPE=Release"
+- "-DPYTHON_EXECUTABLE=/usr/bin/python3"
+- "-DCMAKE_PREFIX_PATH=/usr/include/QtCore:/app/lib/python3.9/site-packages/PyQt6/"
+- "-Dpybind11_DIR=/app/lib/python3.9/site-packages/pybind11/share/cmake/pybind11/"
+- "-DENABLE_GNURADIO_RUNTIME=ON"
+- "-DENABLE_TESTING:BOOL=OFF"
+- "-DCMAKE_INSTALL_LIBDIR=lib"
+- "-DENABLE_GR_CTRLPORT:BOOL=ON"
+- "-DENABLE_PYTHON:BOOL=ON"
+- "-DENABLE_GRC:BOOL=ON"
+- "-DENABLE_GR_ANALOG:BOOL=ON"
+- "-DENABLE_GR_AUDIO:BOOL=ON"
+- "-DENABLE_GR_BLOCKS:BOOL=ON"
+- "-DENABLE_GR_CHANNELS:BOOL=ON"
+- "-DENABLE_GR_DIGITAL:BOOL=ON"
+- "-DENABLE_GR_DTV:BOOL=ON"
+- "-DENABLE_GR_FEC:BOOL=ON"
+- "-DENABLE_GR_FFT:BOOL=ON"
+- "-DENABLE_GR_FILTER:BOOL=ON"
+- "-DENABLE_GR_QTGUI:BOOL=ON"
+- "-DENABLE_GR_TRELLIS:BOOL=ON"
+- "-DENABLE_GR_UHD:BOOL=ON"
+- "-DENABLE_GR_UTILS:BOOL=ON"
+- "-DENABLE_GR_VIDEO_SDL:BOOL=OFF"
+- "-DENABLE_GR_VOCODER:BOOL=ON"
+- "-DENABLE_GR_WAVELET:BOOL=ON"
+- "-DENABLE_GR_ZEROMQ:BOOL=ON"
+- "-DENABLE_DOXYGEN=OFF"
+- "-DENABLE_MANPAGES=OFF"
+make-args:
+- "-j8"
+sources:
+- type: git
+  url: https://github.com/gnuradio/gnuradio.git
+  tag: v3.10.4.0
+builddir: true

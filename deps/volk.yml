@@ -1,0 +1,16 @@
+---
+name: volk
+buildsystem: cmake
+config-opts:
+- "-DCMAKE_BUILD_TYPE=Release"
+- "-DENABLE_TESTING:BOOL=OFF"
+- "-DCMAKE_INSTALL_LIBDIR=lib"
+disabled: false
+make-args:
+- "-j8"
+sources:
+- type: git
+  url: https://github.com/gnuradio/volk.git
+  branch: v2.5.1
+  commit: ce4e4a00fc953f3451bfcdd4310b03785d8b4055
+builddir: true
