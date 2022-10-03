@@ -48,14 +48,14 @@ A flatpak for GNURadio 3.10 with growing support. Working on adding a lot of bac
 * RTLSDR TCP Client
 * Ettus USRP Devices
 * HackRF & rad1o Badge
+* nuand bladeRF
 * RFSPACE Receivers
 * AIRSPY Receiver
+* AIRSPY HF+ Receiver
 * SoapySDR support
 * Red Pitaya SDR
 ## GR-Osmosdr disabled components ##                      
 * Osmocom IQ Imbalance Correction
 * FUNcube Dongle
-* nuand bladeRF
-* AIRSPY HF+ Receiver
 * FreeSRP support
 * XTRX SDR
