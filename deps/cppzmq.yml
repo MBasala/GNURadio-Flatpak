@@ -1,0 +1,12 @@
+name: cppzmq
+buildsystem: cmake-ninja
+cleanup:
+  - /bin
+  - /share
+config-opts:
+  - -DCPPZMQ_BUILD_TESTS=OFF
+sources:
+  - type: git
+    url: https://github.com/zeromq/cppzmq.git
+    tag: v4.7.1
+    commit: 76bf169fd67b8e99c1b0e6490029d9cd5ef97666

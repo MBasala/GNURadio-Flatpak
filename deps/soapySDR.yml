@@ -1,0 +1,7 @@
+name: soapSDR
+buildsystem: cmake-ninja
+sources:
+  - type: git
+    url: https://github.com/pothosware/SoapySDR
+    tag: soapy-sdr-0.8.1
+    commit: 1cf5a539a21414ff509ff7d0eedfc5fa8edb90c6

@@ -1,0 +1,9 @@
+name: librtlsdr
+buildsystem: cmake
+config-opts:
+  - -DPROVIDE_UDP_SERVER=ON
+sources:
+  - type: git
+    url: https://github.com/librtlsdr/librtlsdr.git
+    tag: v0.8.0
+    commit: 6a51ce9baced871c1e0050c04f86f46808a2a824

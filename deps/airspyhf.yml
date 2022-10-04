@@ -1,0 +1,7 @@
+name: airspyhf
+buildsystem: cmake
+sources:
+  - type: git
+    url: https://github.com/airspy/airspyhf.git
+    tag: 1.6.8
+    commit: 8891387edddcd185e2949e9814e9ef35f46f0722

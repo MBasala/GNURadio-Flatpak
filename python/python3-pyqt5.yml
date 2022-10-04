@@ -5,6 +5,7 @@ cleanup:
     - /lib/python3.9/site-packages/PyQt5/uic
 config-opts:
     - --enable-x11
+    - --enable-wayland
     - --disable-static
 buildsystem: simple
 build-commands:
@@ -13,15 +14,12 @@ build-commands:
       --scripts-dir ${FLATPAK_DEST}/bin
       --build-dir ./build
       --jobs ${FLATPAK_BUILDER_N_JOBS}
-      --debug
-      --verbose
       --confirm-license
       --no-docstrings
       --no-qml-plugin
       --no-designer-plugin
       --no-tools
       --no-dbus-python
-      --disable=QtQml
       --disable=QtBluetooth
       --disable=QtDBus
       --disable=QtDesigner
@@ -43,7 +41,6 @@ build-commands:
       --disable=QtTextToSpeech
       --disable=QtWebChannel
       --disable=QtWebSockets
-      --disable=QtX11Extras
       --disable=QtXml
       --disable=QtXmlPatterns
       --disable=_QOpenGLFunctions_2_0
@@ -54,7 +51,9 @@ build-commands:
       #--disable=QtNetwork
       #--disable=QtGui
       #--disable=QtWidgets
+      #--disable=QtQml
       #--disable=QtPrintSupport
+      #--disable=QtX11Extras
 sources:
     - type: archive
       url: https://files.pythonhosted.org/packages/3b/27/fd81188a35f37be9b3b4c2db1654d9439d1418823916fe702ac3658c9c41/PyQt5-5.15.6.tar.gz
